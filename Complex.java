@@ -3,7 +3,7 @@ PRACTICA 1 INGENIERIA DE SOFTWARE
 OPERACIÓN DE NUMEROS COMPLEJOS
 @autor Jhonny Alexander Orco Llanque
 @autor Felix Maturano Zarate
-@autor German Basualdo Rengifo
+@autor German Enrique Basualdo Rengifo
 @version 1.2
 @date 07/03/2024
 */
