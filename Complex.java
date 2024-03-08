@@ -5,7 +5,7 @@ OPERACIÓN DE NUMEROS COMPLEJOS
 @autor Felix Maturano Zarate
 @autor German Basualdo Rengifo
 @version 1.2
-@date 07/03/2024
+@date  07/03/2024
 */
 
 class Complex
