@@ -3,7 +3,7 @@ PRACTICA 1 INGENIERIA DE SOFTWARE
 OPERACIÓN DE NUMEROS COMPLEJOS
 @autor Jhonny Alexander Orco Llanque
 @autor Felix Maturano Zarate
-@autor German Basualdo Rengifo
+@autor German Enrique Basualdo Rengifo
 @version 1.2
 @date  07/03/2024
 */
@@ -51,6 +51,16 @@ class Complex
         double result = Math.sqrt(Math.pow(this.real, 2) + Math.pow(this.imaginario, 2));
         return result;
     }
+        double phase() {
+        //German Enrique Basualdo Rengifo
+        return Math.atan2(imaginario, real);
+    }
+    Complex power(double n) {
+        //German Enrique Basualdo Rengifo
+        double r = Math.pow(module(), n) * Math.cos(n * phase());
+        double i = Math.pow(module(), n) * Math.sin(n * phase());
+        return new complex(r, i);
+    }
 
     Complex squareRoot(){
         //Jhonny Alexander Orco Llanque
@@ -94,6 +104,10 @@ class Complex
         System.out.println("Modulo de complejo 2: " + c2.module());
         System.out.println("Conjugado: "+ c1.conjugado());
         System.out.println("Conjugado: "+ c2.conjugado());
+        System.out.println("fase o argumento 1: " + c1.phase());
+        System.out.println("fase o argumento 2: " + c2.phase());
+        System.out.println("potencia de complejos 1: " + c1.power(n));
+        System.out.println("potencia de complejos 2: " + c2.power(n));
         System.out.println("Raiz cuadrada de complejo 1: +/- (" +  c1.squareRoot() + ")");
         System.out.println("Raiz cuadrada de complejo 2: +/- (" + c2.squareRoot() + ")");
         System.out.println("Logaritmo de complejo 1: " + c1.logarithm());
